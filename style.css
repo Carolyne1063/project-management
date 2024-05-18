@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header h1{
+    font-size: 20px;
+}
+.header p{
+    font-size: 25px;
+    font: bold;
+    text-align: center;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+.projects-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.create-new-project{
+    border: 1px solid gray;
+    background-color: rgb(12, 132, 132);
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+.create-new-project p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+}
+.create-new-project button{
+    padding-bottom: 20px;
+    background-color: beige;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+
+}
+.view-all-projects{
+    border: 1px solid gray;
+    background-color: rgb(12, 132, 132);
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+.view-all-projects p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+}
+.view-all-projects button{
+    padding-bottom: 20px;
+    background-color: beige;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+
+}
+.create-project-form{
+    width: 300px;
+    height: 400px;
+    background-color: darkslategray;
+    color: white;
+    border: 1px solid gray;
+}
+table{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

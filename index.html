@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+</head>
+<style>
+    @import url(style.css);
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DASHBOARD</h1>
+            <p>Welcome Carolyne</p>
+        </div>
+        <div class="projects-nav">
+            <div class="create-new-project">
+                <p>Create New Project</p>
+                <button class="create-new">
+                    <p>Create New</p>
+                </button>
+            </div>
+            <div class="view-all-projects">
+                <p>View all Projects</p>
+                <button class="view-all">
+                    <p>View All Projects</p>
+                </button>
+            </div>
+            <form class="create-project-form">
+                <div class="new-projects">
+                    <label for="">Project Name</label>
+                    <br>
+                    <input type="text" name="" id="project-name">
+                </div>
+                <br>
+                <div class="description">
+                    <label for="">Description</label>
+                    <br>
+                    <input type="text" name="" id="description">
+                </div>
+                <br>
+                <input type="submit" class="btnsubmit" value="Create Project">
+            </form>
+            <table id="displayProjects">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
