@@ -4,6 +4,7 @@ const createProjectForm = document.querySelector('.create-project-form');
 const viewAll = document.querySelector('.view-all');
 const displayProjectsTable = document.getElementById('displayProjects');
 
+createProjectForm.style.display='none';
 createNewButton.addEventListener('click', function() {
     event.preventDefault();
 
@@ -14,11 +15,11 @@ createNewButton.addEventListener('click', function() {
         createProjectForm.style.display = 'none';
     }
 });
-
+displayProjectsTable.style.display='none';
 viewAll.addEventListener('click', function() {
     event.preventDefault();
 
-    
+
     if (displayProjectsTable.style.display === 'none' || displayProjectsTable.style.display === '') {
         displayProjectsTable.style.display = 'block';
     } else {
