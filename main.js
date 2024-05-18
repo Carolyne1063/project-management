@@ -43,14 +43,15 @@ createProjectForm.addEventListener('submit', function(event) {
     // Reset form fields
     createProjectForm.reset();
     
-    let deleteProjectbtn = document.createElement('button')
-    deleteProjectbtn.textContent = 'Delete'
-    deleteUserbtn.addEventListener('click', ()=>{
-        
-        remainingProjectList = displayProjectsTable.splice(insertCell(), 1)
-        
-        displayProjectsTable()
-    })
+    const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click', function() {
+            deleteRow(newRow);
+        });
+
+        // Add delete button to cell
+        cell1.appendChild(deleteButton);
+        cell2.appendChild(deleteButton);
 });
 
 
