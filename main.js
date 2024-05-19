@@ -5,7 +5,7 @@ const viewAll = document.querySelector('.view-all');
 const displayProjectsTable = document.getElementById('displayProjects');
 
 createProjectForm.style.display='none';
-createNewButton.addEventListener('click', function() {
+createNewButton.addEventListener('click', function(event) {
     event.preventDefault();
 
 
@@ -16,7 +16,7 @@ createNewButton.addEventListener('click', function() {
     }
 });
 displayProjectsTable.style.display='none';
-viewAll.addEventListener('click', function() {
+viewAll.addEventListener('click', function(event) {
     event.preventDefault();
 
 
@@ -52,6 +52,8 @@ createProjectForm.addEventListener('submit', function(event) {
         // Add delete button to cell
         cell1.appendChild(deleteButton);
         cell2.appendChild(deleteButton);
+    
+    
 });
 
 
